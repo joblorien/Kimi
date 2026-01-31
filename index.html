@@ -660,7 +660,7 @@
             box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
         }
 
-                /* Recognition Section - PURPLE Glow */
+                 /* Recognition Section - PURPLE Glow with expanding animation */
         .awards-section {
             background: var(--darker-bg);
             position: relative;
@@ -680,7 +680,7 @@
         .award-card {
             max-width: 700px;
             margin: 0 auto;
-            background: linear-gradient(135deg, rgba(184, 41, 221, 0.08), rgba(0, 212, 255, 0.03));
+            background: var(--card-bg);
             border: 2px solid rgba(184, 41, 221, 0.3);
             padding: 3.5rem;
             text-align: center;
@@ -693,14 +693,12 @@
 
         .award-card:hover {
             transform: translateY(-5px);
-            background: linear-gradient(135deg, rgba(184, 41, 221, 0.15), rgba(0, 212, 255, 0.05));
-            border-color: rgba(184, 41, 221, 0.6);
             box-shadow: 0 20px 60px rgba(184, 41, 221, 0.4);
         }
 
         @keyframes award-glow {
             0%, 100% { box-shadow: 0 0 40px rgba(184, 41, 221, 0.15); }
-            50% { box-shadow: 0 0 60px rgba(184, 41, 221, 0.25), 0 0 100px rgba(184, 41, 221, 0.1); }
+            50% { box-shadow: 0 0 80px rgba(184, 41, 221, 0.3), 0 0 120px rgba(184, 41, 221, 0.1); }
         }
 
         .award-icon {
@@ -742,6 +740,9 @@
             line-height: 1.7;
             font-size: 1.05rem;
         }
+        
+     
+        
 
 
                 /* Academic Background - BLUE Glow */
