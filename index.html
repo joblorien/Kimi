@@ -771,10 +771,7 @@
         }
         
      
-        
-
-
-                /* Academic Background - BLUE Glow */
+              /* Academic Background - BLUE outline only, no glow */
         .education-section {
             position: relative;
         }
@@ -786,7 +783,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at center, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+            background: radial-gradient(circle at center, rgba(0, 212, 255, 0.05) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -794,31 +791,24 @@
             max-width: 600px;
             margin: 0 auto 3rem;
             background: var(--card-bg);
-            border: 2px solid rgba(0, 212, 255, 0.3);
+            border: 2px solid rgba(0, 212, 255, 0.5);
             padding: 3rem;
             text-align: center;
             position: relative;
-            box-shadow: 0 0 40px rgba(0, 212, 255, 0.15);
-            animation: edu-glow 3s ease-in-out infinite;
             backdrop-filter: blur(10px);
             transition: all 0.3s;
         }
 
         .edu-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
-        }
-
-        @keyframes edu-glow {
-            0%, 100% { box-shadow: 0 0 40px rgba(0, 212, 255, 0.15); }
-            50% { box-shadow: 0 0 80px rgba(0, 212, 255, 0.3), 0 0 120px rgba(184, 41, 221, 0.1); }
+            border-color: var(--neon-blue);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
         }
 
         .edu-degree {
             color: var(--neon-blue);
             font-size: 1.8rem;
             margin-bottom: 0.5rem;
-            text-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
         }
 
         .edu-school {
@@ -831,7 +821,10 @@
             color: var(--text-secondary);
             font-size: 1rem;
         }
+        
 
+
+        
         
 
 
@@ -1068,7 +1061,7 @@
             <h1 class="glitch" data-text="JOB RYAN">JOB RYAN</h1>
             <div class="hero-subtitle">Technical Writer</div>
             <p class="hero-desc">
-                Detail-oriented Technical Writer with 2+ years of experience creating clear, user-focused documentation for complex systems and products.
+            Technical Writer | Software Documentation
             </p>
             <div>
                 <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
